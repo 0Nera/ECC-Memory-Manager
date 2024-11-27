@@ -141,7 +141,7 @@ int main() {
     // Выделение памяти
     int index = ecc_allocate(mm);
     if (index == -1) {
-        printf("Не удалось выделить память.\n");
+        printf("Memory allocation failed.\n");
         free(mm);
         return 1;
     }
